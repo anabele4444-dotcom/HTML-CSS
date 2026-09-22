@@ -1,0 +1,247 @@
+/* ================================================
+   STYLE ALAY — warna tabrakan! Warna kotak
+   (lavender, pink, kuning, ungu) vs warna
+   background (merah darah, hijau neon, cyan).
+   ================================================ */
+
+/* ============ BODY (Linear Gradient TABRAKAN) ============ */
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: "Comic Sans MS", cursive;
+    /* warna berani & nabrak: merah darah + hijau neon + cyan */
+    background: linear-gradient(135deg,
+        #ff0033,
+        #39ff14,
+        #00e5ff,
+        #ff0033,
+        #39ff14);
+    background-size: 400% 400%;
+    transition: background-position 1.2s ease;
+}
+
+body:hover {
+    background-position: 100% 50%;
+}
+
+/* ============ H1 (Transition + Transform + Gradient) ============ */
+h1.judul {
+    color: #c061cd;
+    font-size: 50px;
+    padding: 20px;
+    margin: 0 0 25px;
+    border: 6px dashed yellow;
+    background-image: linear-gradient(to right,
+        hotpink, orange, yellow, lime, cyan, violet);
+    text-shadow: 3px 3px 0 white;
+    transform: rotate(-1deg);
+    transition: all 0.5s ease;
+}
+
+h1.judul:hover {
+    transform: rotate(5deg) scale(1.05) skewX(-4deg);
+    letter-spacing: 4px;
+    color: yellow;
+    border-color: black;
+    background-image: linear-gradient(to left,
+        hotpink, orange, yellow, lime, cyan, violet);
+}
+
+/* ============ PRE / KOTAK (lavender & pink pucat) ============ */
+pre.kotak {
+    padding: 15px;
+    margin: 15px 0;
+    border: 4px solid black;
+    background-image: linear-gradient(to right, #c8cdff, #ffd6f5);
+    transform: rotate(0.5deg);
+    transition: all 0.4s ease;
+}
+
+pre.kotak:hover {
+    transform: rotate(-2deg) scale(1.03) translateX(10px);
+    background-image: linear-gradient(to right, yellow, orange);
+    box-shadow: 10px 10px 0 black;
+}
+
+/* ============ GAMBAR (POLOS, cuma muter-muter) ============ */
+.gambar-wrap {
+    padding: 20px;
+    background: none;
+    border: none;
+}
+
+img.gambar {
+    border: none;
+    background: none;
+    display: inline-block;
+    animation: muterMuter 6s linear infinite;
+    transition: all 0.4s ease;
+}
+
+img.gambar:hover {
+    animation-duration: 1s;
+    transform: scale(1.15);
+}
+
+@keyframes muterMuter {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(360deg); }
+}
+
+/* ============ LINK (kuning-orange vs bg hijau neon) ============ */
+a.link {
+    display: inline-block;
+    padding: 8px 16px;
+    background-image: linear-gradient(to right, yellow, orange);
+    color: black;
+    text-decoration: none;
+    border: 3px solid black;
+    font-weight: bold;
+    transform: rotate(-1deg);
+    transition: all 0.3s ease;
+}
+
+a.link:hover {
+    transform: rotate(6deg) scale(1.15) translateY(-4px);
+    background-image: linear-gradient(to left, magenta, red);
+    color: yellow;
+    box-shadow: 6px 6px 0 black;
+}
+
+/* ============ UL LAGU (pink-skyblue vs bg merah) ============ */
+ul.lagu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 15px;
+    margin: 15px 0;
+    background-image: linear-gradient(to right, pink, skyblue);
+    border: 4px solid black;
+    transition: all 0.4s ease;
+}
+
+ul.lagu li {
+    padding: 8px 16px;
+    background-color: yellow;
+    border: 3px solid black;
+    font-weight: bold;
+    transform: rotate(0deg);
+    transition: all 0.3s ease;
+}
+
+ul.lagu li:hover {
+    transform: rotate(-10deg) scale(1.2);
+    background-color: magenta;
+    color: yellow;
+}
+
+/* ============ H3 SUBJUDUL (ungu-biru vs bg hijau) ============ */
+h3.subjudul {
+    font-size: 28px;
+    color: white;
+    padding: 10px 18px;
+    border: 4px dotted yellow;
+    background-image: linear-gradient(to right, purple, blue);
+    transform: rotate(1deg);
+    transition: all 0.4s ease;
+}
+
+h3.subjudul:hover {
+    transform: rotate(-4deg) scale(1.05);
+    letter-spacing: 3px;
+    background-image: linear-gradient(to left, purple, blue);
+}
+
+/* ============ P CERITA (pucat banget vs bg norak) ============ */
+p.cerita {
+    padding: 10px 15px;
+    margin: 8px 0;
+    background-image: linear-gradient(to right, #fff0f5, #f0f8ff);
+    border-left: 8px solid magenta;
+    transition: all 0.3s ease;
+}
+
+p.cerita:hover {
+    transform: translateX(20px) rotate(-1deg);
+    background-image: linear-gradient(to right, yellow, orange);
+    border-left-color: black;
+}
+
+/* ============ TABEL (magenta-ungu vs bg cyan) ============ */
+table.tabel {
+    border-collapse: collapse;
+    margin-top: 15px;
+    transition: all 0.4s ease;
+}
+
+table.tabel th {
+    padding: 12px;
+    color: yellow;
+    background-image: linear-gradient(to right, #ff0080, #8000ff);
+    transition: all 0.3s ease;
+}
+
+table.tabel th:hover {
+    transform: scale(1.15) rotate(-3deg);
+    background-image: linear-gradient(to left, #ff0080, #8000ff);
+    letter-spacing: 2px;
+}
+
+table.tabel td {
+    padding: 10px;
+    text-align: center;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+table.tabel tr:hover td {
+    background-image: linear-gradient(to right, yellow, orange);
+    transform: translateX(8px);
+}
+
+/* ============ RESPONSIVE (Media Query) ============ */
+@media (max-width: 700px) {
+    body {
+        padding: 10px;
+        font-size: 14px;
+        background-size: 300% 300%;
+    }
+
+    h1.judul {
+        font-size: 22px;
+        padding: 10px;
+        letter-spacing: 0;
+    }
+
+    pre.kotak {
+        font-size: 11px;
+        padding: 8px;
+    }
+
+    ul.lagu {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    img.gambar {
+        width: 180px !important;
+    }
+
+    h3.subjudul {
+        font-size: 18px;
+    }
+
+    p.cerita {
+        font-size: 13px;
+        padding: 8px 10px;
+    }
+
+    table.tabel {
+        font-size: 12px;
+    }
+
+    table.tabel th,
+    table.tabel td {
+        padding: 6px;
+    }
+}
