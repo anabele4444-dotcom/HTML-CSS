@@ -1,15 +1,7 @@
-/* ================================================
-   STYLE ALAY — warna tabrakan! Warna kotak
-   (lavender, pink, kuning, ungu) vs warna
-   background (merah darah, hijau neon, cyan).
-   ================================================ */
-
-/* ============ BODY (Linear Gradient TABRAKAN) ============ */
 body {
     margin: 0;
     padding: 20px;
     font-family: "Comic Sans MS", cursive;
-    /* warna berani & nabrak: merah darah + hijau neon + cyan */
     background: linear-gradient(135deg,
         #ff0033,
         #39ff14,
@@ -24,7 +16,6 @@ body:hover {
     background-position: 100% 50%;
 }
 
-/* ============ H1 (Transition + Transform + Gradient) ============ */
 h1.judul {
     color: #c061cd;
     font-size: 50px;
@@ -47,7 +38,6 @@ h1.judul:hover {
         hotpink, orange, yellow, lime, cyan, violet);
 }
 
-/* ============ PRE / KOTAK (lavender & pink pucat) ============ */
 pre.kotak {
     padding: 15px;
     margin: 15px 0;
@@ -63,7 +53,6 @@ pre.kotak:hover {
     box-shadow: 10px 10px 0 black;
 }
 
-/* ============ GAMBAR (POLOS, cuma muter-muter) ============ */
 .gambar-wrap {
     padding: 20px;
     background: none;
@@ -88,7 +77,6 @@ img.gambar:hover {
     to   { transform: rotate(360deg); }
 }
 
-/* ============ LINK (kuning-orange vs bg hijau neon) ============ */
 a.link {
     display: inline-block;
     padding: 8px 16px;
@@ -108,7 +96,6 @@ a.link:hover {
     box-shadow: 6px 6px 0 black;
 }
 
-/* ============ UL LAGU (pink-skyblue vs bg merah) ============ */
 ul.lagu {
     display: flex;
     flex-wrap: wrap;
@@ -135,7 +122,6 @@ ul.lagu li:hover {
     color: yellow;
 }
 
-/* ============ H3 SUBJUDUL (ungu-biru vs bg hijau) ============ */
 h3.subjudul {
     font-size: 28px;
     color: white;
@@ -152,7 +138,6 @@ h3.subjudul:hover {
     background-image: linear-gradient(to left, purple, blue);
 }
 
-/* ============ P CERITA (pucat banget vs bg norak) ============ */
 p.cerita {
     padding: 10px 15px;
     margin: 8px 0;
@@ -167,7 +152,6 @@ p.cerita:hover {
     border-left-color: black;
 }
 
-/* ============ TABEL (magenta-ungu vs bg cyan) ============ */
 table.tabel {
     border-collapse: collapse;
     margin-top: 15px;
@@ -199,7 +183,6 @@ table.tabel tr:hover td {
     transform: translateX(8px);
 }
 
-/* ============ RESPONSIVE (Media Query) ============ */
 @media (max-width: 700px) {
     body {
         padding: 10px;
